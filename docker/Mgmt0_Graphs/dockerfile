@@ -1,0 +1,11 @@
+FROM johncapobianco/merlin:base_image
+
+COPY /templates/cisco/nxos/* /templates/cisco/nxos/
+COPY /testbed/testbed_DevNet_Nexus9k_Sandbox.yaml /testbed/
+COPY /python/general_functionalities.py /python/
+COPY /python/Mgmt0_Graphs_job.py /python/
+COPY /python/Mgmt0_Graphs.py /python/
+COPY /scripts/Mgmt0_Graphs.sh /
+COPY /Camelot/Mgmt0_Graphs/* /Camelot/Mgmt0_Graphs/
+
+CMD ["/bin/bash", "/Mgmt0_Graphs.sh"]

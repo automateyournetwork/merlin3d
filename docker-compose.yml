@@ -1,0 +1,16 @@
+version: '3'
+services:        
+  base_image:
+    image: johncapobianco/smoothie:base_image
+    build: 
+      context: ./
+      dockerfile: ./docker/Base_Image/dockerfile
+  Mgmt0_IO_Graphs:
+    image: johncapobianco/smoothie:Mgmt0_Graphs
+    build: 
+      context: ./
+      dockerfile: ./docker/Mgmt0_Graphs/dockerfile
+    ports:
+      - "8080:80"
+    volumes: 
+      - ~/merlin3d/Camelot/Mgmt0_Graphs:/Camelot/Mgmt0_Graphs
