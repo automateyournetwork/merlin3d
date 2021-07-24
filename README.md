@@ -1,6 +1,6 @@
 # Merlin3D for Cisco DevNet Sandbox Nexus 9000
 
-Merlin 3d Logo 
+![Merlin3D Logo](images/merlin3dlogo.PNG)
 
 ![Blender Logo](images/blender_logo_socket.png)
 
