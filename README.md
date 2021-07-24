@@ -2,6 +2,10 @@
 
 ![Merlin3D Logo](images/merlin3dlogo.PNG)
 
+# Featuring 
+
+![pyATS 3d Logo](images/pyats_3d_logo.PNG)
+
 ![Blender Logo](images/blender_logo_socket.png)
 
 For the main Merlin project and what Merlin does please visit:
