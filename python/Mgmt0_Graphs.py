@@ -74,7 +74,7 @@ class Collect_Information(aetest.Testcase):
                         date_time = today.strftime("%m/%d/%Y, %H:%M:%S")
 
                         Mgmt0_IO_blender_template = env.get_template('Mgmt0_IO_Bar_Graph_blender.j2')                    
-                        Mgmt0_IO_blender = Mgmt0_IO_blender_template.render(Mgmt0=self.learned_interface['Mgmt0'],Eth1_5=self.learned_interface['Ethernet1/5'],date=date_time)
+                        Mgmt0_IO_blender = Mgmt0_IO_blender_template.render(Mgmt0=self.learned_interface['Mgmt0'],date=date_time)
 
                         with open("Camelot/Mgmt0_Graphs/%s_Mgmt0_IO_Bar_Graph_blender.json" % device.alias, "w") as fh:
                             fh.write(Mgmt0_IO_blender)
