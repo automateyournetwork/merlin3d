@@ -1,0 +1,11 @@
+FROM johncapobianco/merlin:base_image
+
+COPY /templates/cisco/nxos/* /templates/cisco/nxos/
+COPY /testbed/testbed_DevNet_Nexus9k_Sandbox.yaml /testbed/
+COPY /python/general_functionalities.py /python/
+COPY /python/ip_interface_brief_job.py /python/
+COPY /python/ip_interface_brief.py /python/
+COPY /scripts/ip_interface_brief.sh /
+COPY /Camelot/IP_Interface_Brief/* /Camelot/IP_Interface_Brief/
+
+CMD ["/bin/bash", "/ip_interface_brief.sh"]

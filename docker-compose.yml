@@ -10,7 +10,12 @@ services:
     build: 
       context: ./
       dockerfile: ./docker/Mgmt0_Graphs/dockerfile
-    ports:
-      - "8080:80"
     volumes: 
       - ~/merlin3d/Camelot/Mgmt0_Graphs:/Camelot/Mgmt0_Graphs
+  IP_Interface_Brief:
+    image: johncapobianco/smoothie:IP_Interface_Brief
+    build: 
+      context: ./
+      dockerfile: ./docker/IP_Interface_Brief/dockerfile
+    volumes: 
+      - ~/merlin3d/Camelot/IP_Interface_Brief:/Camelot/IP_Interface_Brief      
