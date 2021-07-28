@@ -70,8 +70,6 @@ You're now ready to run Merlin against the DevNet Nexus 9000!
 
 1. Follow these instructions 
 
-[Docker Desktop using WSL2](https://code.visualstudio.com/blogs/2020/03/02/docker-in-wsl2)
-
 ![Docker Desktop using WSL2](images/docker_wsl.PNG)
 
 [Docker with WSL2 Backend](https://docs.docker.com/docker-for-windows/wsl/)
