@@ -1,4 +1,5 @@
 # Merlin3D for Cisco DevNet Sandbox Nexus 9000
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/automateyournetwork/merlin3d)
 
 ![Merlin3D Logo](images/merlin3dlogo.PNG)
 
