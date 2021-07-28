@@ -8,6 +8,10 @@
 
 ![Blender Logo](images/blender_logo_socket.png)
 
+For Videos Please check the Merlin 3D Playlist on YouTube
+
+[YouTube Channel](https://www.youtube.com/playlist?list=PLdeUbXQuf3Teuez4S0lJVprL7p3Fyk_Xj)
+
 For the main Merlin project and what Merlin does please visit:
 
 [Merlin - Network Magic](https://github.com/automateyournetwork/merlin)
