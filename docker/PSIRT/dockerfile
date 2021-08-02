@@ -1,0 +1,9 @@
+FROM johncapobianco/merlin:base_image
+
+COPY /templates/cisco/PSIRT/* /templates/cisco/PSIRT/
+COPY /testbed/testbed_DevNet_Nexus9k_Sandbox.yaml /testbed/
+COPY /python/PSIRT.py /python/
+COPY /scripts/PSIRT.sh /
+COPY /Camelot/PSIRT/* /Camelot/PSIRT/
+
+CMD ["/bin/bash", "/PSIRT.sh"]

@@ -1,0 +1,21 @@
+[{% for advisory in PSIRT %}{% set advisory_loop = loop %}
+    [
+        "Advisory ID:","{{ advisory.advisoryId }}",
+        "Advisory Title:","{{ advisory.advisoryTitle }}",
+        "Bug IDs:","{{ advisory.bugIDs | replace("[","") | replace("]","") | replace("'","")}}",
+        "Common Vulnerabilities and Exposures:","{{ advisory.cves | replace("[","") | replace("]","") | replace("'","")}}",
+        "Common Vulnerability Reporting Framework URL:","{{ advisory.cvrfUrl }}",
+        "Common Vulnerability Scoring System Base Score:","{{ advisory.cvssBaseScore }}",
+        "Common Weakness Enumeration:","{{ advisory.cwe | replace("[","") | replace("]","") | replace("'","")}}",
+        "First Published:","{{ advisory.firstPublished }}",
+        "Last Updated:","{{ advisory.lastUpdated }}",
+        "IOS Release:","{{ advisory.iosRelease | replace("[","") | replace("]","") | replace("'","")}}",
+        "Intrusion Prevension System Signatures:","{{ advisory.ipsSignatures | replace("[","") | replace("]","") | replace("'","")}}",
+        "Platform:","{% for platform in advisory.platforms %}{% set platform_loop = loop %}{{ platform.name }}{% if platform_loop.last %}{% else %},{% endif %}{% endfor %}",
+        "Vulernability State:","{% for platform in advisory.platforms %}{% set platform_loop = loop %}{{ platform.vulnerabilityState }}{% if platform_loop.last %}{% else %},{% endif %}{% endfor %}",
+        "Fixed IOS:","{% for platform in advisory.platforms %}{% for fix in platform.firstFixes %}{% set fix_loop = loop %}{{ fix.name }}{% if fix_loop.last %}{% else %},{% endif %}{% endfor %}{% endfor %}",
+        "Publication URL:","{{ advisory.publicationUrl }}",
+        "Security Incident Response:","{{ advisory.sir }}",
+        "Advisory Status:","{{ advisory.status }}",
+        "Timestamp:","{{ date }}"{% if advisory_loop.last %}]{% else %}],{% endif %}
+{% endfor %}]

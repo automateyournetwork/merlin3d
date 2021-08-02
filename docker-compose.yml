@@ -1,21 +1,28 @@
 version: '3'
 services:        
   base_image:
-    image: johncapobianco/smoothie:base_image
+    image: johncapobianco/merlin3d:base_image
     build: 
       context: ./
       dockerfile: ./docker/Base_Image/dockerfile
   Mgmt0_IO_Graphs:
-    image: johncapobianco/smoothie:Mgmt0_Graphs
+    image: johncapobianco/merlin3d:Mgmt0_Graphs
     build: 
       context: ./
       dockerfile: ./docker/Mgmt0_Graphs/dockerfile
     volumes: 
       - ~/merlin3d/Camelot/Mgmt0_Graphs:/Camelot/Mgmt0_Graphs
   IP_Interface_Brief:
-    image: johncapobianco/smoothie:IP_Interface_Brief
+    image: johncapobianco/merlin3d:IP_Interface_Brief
     build: 
       context: ./
       dockerfile: ./docker/IP_Interface_Brief/dockerfile
     volumes: 
-      - ~/merlin3d/Camelot/IP_Interface_Brief:/Camelot/IP_Interface_Brief      
+      - ~/merlin3d/Camelot/IP_Interface_Brief:/Camelot/IP_Interface_Brief
+  PSIRT:
+    image: johncapobianco/merlin3d:PSIRT
+    build: 
+      context: ./
+      dockerfile: ./docker/PSIRT/dockerfile
+    volumes: 
+      - ~/merlin3d/Camelot/PSIRT:/Camelot/PSIRT      
