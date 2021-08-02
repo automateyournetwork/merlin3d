@@ -103,17 +103,21 @@ git clone https://github.com/automateyournetwork/merlin3d.git
 
 ![Blender Preferences](images/install_an02.png)
 
-6. Open the Blender File 
+# Examples:
+
+## Management Input / Output Rates
+
+1. Open the Blender File 
 
 ![Open Blender](images/openblenderfile.png)
 
 Browse to Mgmt0_IO.blend 
 
-7. Connect the VPN to DevNet if you have not already done so 
+2. Connect the VPN to DevNet if you have not already done so 
 
-8. Ensure Docker Desktop is running 
+3. Ensure Docker Desktop is running 
 
-9. In WSL Ubuntu docker-compose up Mgmt0_IO_Graphs
+4. In WSL Ubuntu docker-compose up Mgmt0_IO_Graphs
 
 ```console
 
@@ -124,7 +128,7 @@ cd merlin3d
 
 This will run Merlin in a loop 50 times by default 
 
-10. Start your Animation in Blender
+5. Start your Animation in Blender
 
 ![Start Animation](images/startanimation.PNG)
 
@@ -135,5 +139,34 @@ You can send PINGs to 10.10.20.254 on the CLI of the device to make the counters
 ping 10.10.20.254 vrf management packet-size {{ size packets you want to send }} count {{ number of pings }}
 
 ```
+
+## Show IP Interface Brief - 3D !
+
+1. Open the Blender File 
+
+![Open Blender](images/openblenderfile.png)
+
+Browse to ip_int_brief.blend 
+
+2. Connect the VPN to DevNet if you have not already done so 
+
+3. Ensure Docker Desktop is running 
+
+4. In WSL Ubuntu docker-compose up Mgmt0_IO_Graphs
+
+```console
+
+cd merlin3d
+
+~/merlin3d/docker-compose up IP_Interface_Brief
+```
+
+This will run Merlin in a loop 50 times by default 
+
+5. View the Blender
+
+![Show IP Interface Brief](images/Show_IP_Int_Brief.PNG)
+
+You can add, change, or remove interfaces, re-run the Docker to refresh the 3D version!
 
 [Back to the main project](https://github.com/automateyournetwork/merlin)
