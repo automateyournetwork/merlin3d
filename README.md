@@ -128,7 +128,13 @@ cd merlin3d
 
 This will run Merlin in a loop 50 times by default 
 
-5. Start your Animation in Blender
+5. First ensure you are in Render View (click 1)
+
+6. Next make sure you execute the Python Code (click 2)
+
+6. Finally, start your Animation in Blender (click 3)
+
+![Start Animation](images/Steps.png)
 
 ![Start Animation](images/startanimation.PNG)
 
