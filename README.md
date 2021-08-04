@@ -175,4 +175,29 @@ This will run Merlin in a loop 50 times by default
 
 You can add, change, or remove interfaces, re-run the Docker to refresh the 3D version!
 
+## Cisco Product Security Incident Response Team (PSIRT) 3D Report !
+
+1. Open the Blender File 
+
+![Open Blender](images/openblenderfile.png)
+
+PSIRT.blend 
+
+3. Ensure Docker Desktop is running 
+
+4. In WSL Ubuntu docker-compose up PSIRT
+
+```console
+
+cd merlin3d
+
+~/merlin3d/docker-compose up PSIRT
+```
+
+5. View the Blender
+
+![Show IP Interface Brief](images/PSIRT.jpg)
+
+You can add, change, or remove the PSIRT JSON from the REST API, re-run the Docker to refresh the 3D version of your PSIRT IOS Version Report!
+
 [Back to the main project](https://github.com/automateyournetwork/merlin)

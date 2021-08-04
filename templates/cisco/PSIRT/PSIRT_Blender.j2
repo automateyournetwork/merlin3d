@@ -13,7 +13,7 @@
         "Intrusion Prevension System Signatures:","{{ advisory.ipsSignatures | replace("[","") | replace("]","") | replace("'","")}}",
         "Platform:","{% for platform in advisory.platforms %}{% set platform_loop = loop %}{{ platform.name }}{% if platform_loop.last %}{% else %},{% endif %}{% endfor %}",
         "Vulernability State:","{% for platform in advisory.platforms %}{% set platform_loop = loop %}{{ platform.vulnerabilityState }}{% if platform_loop.last %}{% else %},{% endif %}{% endfor %}",
-        "Fixed IOS:","{% for platform in advisory.platforms %}{% for fix in platform.firstFixes %}{% set fix_loop = loop %}{{ fix.name }}{% if fix_loop.last %}{% else %},{% endif %}{% endfor %}{% endfor %}",
+        "Fixed IOS:","{% for platform in advisory.platforms %}{% set platform_loop = loop %}{% for fix in platform.firstFixes %}{{ fix.name }}{% if platform_loop.last %}{% else %},{% endif %}{% endfor %}{% endfor %}",
         "Publication URL:","{{ advisory.publicationUrl }}",
         "Security Incident Response:","{{ advisory.sir }}",
         "Advisory Status:","{{ advisory.status }}",
