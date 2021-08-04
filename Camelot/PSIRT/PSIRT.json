@@ -17,7 +17,7 @@
         "Publication URL:","https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-3000-9000-fileaction-QtLzDRy2",
         "Security Incident Response:","Critical",
         "Advisory Status:","Final",
-        "Timestamp:","08/04/2021, 15:20:24"],
+        "Timestamp:","08/04/2021, 16:17:07"],
 
     [
         "Advisory ID:","cisco-sa-nxos-udld-rce-xetH6w35",
@@ -37,7 +37,7 @@
         "Publication URL:","https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nxos-udld-rce-xetH6w35",
         "Security Incident Response:","Medium",
         "Advisory Status:","Final",
-        "Timestamp:","08/04/2021, 15:20:24"],
+        "Timestamp:","08/04/2021, 16:17:07"],
 
     [
         "Advisory ID:","cisco-sa-nxos-pim-dos-Y8SjMz4",
@@ -57,7 +57,7 @@
         "Publication URL:","https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nxos-pim-dos-Y8SjMz4",
         "Security Incident Response:","Medium",
         "Advisory Status:","Final",
-        "Timestamp:","08/04/2021, 15:20:24"],
+        "Timestamp:","08/04/2021, 16:17:07"],
 
     [
         "Advisory ID:","cisco-sa-ipv6-acl-CHgdYk8j",
@@ -77,5 +77,5 @@
         "Publication URL:","https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ipv6-acl-CHgdYk8j",
         "Security Incident Response:","Medium",
         "Advisory Status:","Final",
-        "Timestamp:","08/04/2021, 15:20:24"]
+        "Timestamp:","08/04/2021, 16:17:07"]
 ]
